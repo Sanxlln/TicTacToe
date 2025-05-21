@@ -1,4 +1,4 @@
-name:CI_BashynskaOleksandra_z-21
+name: CI_BashynskaOleksandra_z-21
 on:
   push:
     branches: [ "main", "feature" ]
