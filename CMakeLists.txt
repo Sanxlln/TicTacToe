@@ -8,9 +8,9 @@ option(USE_SHARED_LIB OFF)
 
 
 if(USE_STATIC_LIB AND USE_SHARED_LIB)
-    message(FATAL_ERROR )
+    message(FATAL_ERROR "Не можна одночасно використовувати і статичну, і динамічну бібліотеку. Встановіть лише один варіант.")
 elseif(NOT USE_STATIC_LIB AND NOT USE_SHARED_LIB)
-    message(FATAL_ERROR "Потрібно вибрати або статичну (USE_STATIC_LIB=ON), або динамічну (USE_SHARED_LIB=ON) бібліотеку.")
+    message(FATAL_ERROR "Потрібно обрати тип бібліотеки: статичну (USE_STATIC_LIB=ON) або динамічну (USE_SHARED_LIB=ON).")
 endif()
 
 
