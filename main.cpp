@@ -23,6 +23,7 @@ int main() {
         int choice;
         std::cin >> choice;
         if (choice == 1) {
+            std::cout << "Game starts!";
             startGame(player1, player2, boardSize);
         } 
         else if (choice == 2) {
